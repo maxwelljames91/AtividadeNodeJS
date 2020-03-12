@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/maxwelljames91/AtividadeNodeJS/issues"
   },
-  "homepage": "https://github.com/maxwelljames91/AtividadeNodeJS#readme"
+  "homepage": "https://github.com/maxwelljames91/AtividadeNodeJS#readme",
+  "dependencies": {
+    "restify": "^8.5.1"
+  }
 }
