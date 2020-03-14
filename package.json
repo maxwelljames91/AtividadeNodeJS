@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/maxwelljames91/AtividadeNodeJS#readme",
   "dependencies": {
-    "restify": "^8.5.1"
+    "restify": "^8.5.1",
+    "sequelize": "^5.21.5"
   }
 }

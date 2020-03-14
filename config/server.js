@@ -29,6 +29,27 @@ server.get('/', (request, response, next) => {
  next();
 });
 
+server.get('/contatos', (request, response, next) => {
+    //Enum, do tipo: 1=email | 2=telefone
+    const Contatos = [
+        {
+            id:1,
+            Nome: 'Maxwell James',
+            Contatos:[
+                {
+                    tipo:1,
+                    contato: 'maxwell.silva@a.ficr.edu.br'
+                },
+                {
+                    tipo:2,
+                    contato: '12312312389'
+                }
+            ]
+        }];
+    response.send(200, Contatos);
+    next();
+   });
+
 //Iremos executar nosso servidor com as configurações e rotas adicionadas anteriormente
 server.listen(port, () => {
  console.log('restify executando na porta:${port}');
